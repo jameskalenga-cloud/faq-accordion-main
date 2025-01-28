@@ -1,0 +1,54 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --White: hsl(0, 0%, 100%);
+  --Light_pink: hsl(275, 100%, 97%);
+  --Grayish_purple: hsl(292, 16%, 49%);
+  --Dark_purple: hsl(292, 42%, 14%);
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.body_container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+ }
+
+ .container_part1{
+  height: 35%;
+  width: 100%;
+  background-image: url('/background-pattern-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+ 
+
+ .container_part2{
+
+  height: 65%;
+  width: 100%;
+  background-color: var(--Light_pink);
+ }
+
+
+ .accordion{
+  position: absolute; /* Ensures positioning doesn't affect background */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  width: 600px;
+  height: 570px;
+  background-color: var(--White);
+  border-radius: 10px;
+ }
+
+
