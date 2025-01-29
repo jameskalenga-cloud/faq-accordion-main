@@ -5,6 +5,9 @@
   --Light_pink: hsl(275, 100%, 97%);
   --Grayish_purple: hsl(292, 16%, 49%);
   --Dark_purple: hsl(292, 42%, 14%);
+  --weights_400: 400;
+  --weights_600:600;
+  --weights_700: 700;
 }
 
 
@@ -38,9 +41,13 @@
   width: 100%;
   background-color: var(--Light_pink);
  }
-
-
+ .accordion_{
+  border-bottom: 1px solid var(--Light_pink);
+  padding-bottom: 20px;
+ }
+ 
  .accordion{
+  font-family: "Work Sans", serif;
   position: absolute; /* Ensures positioning doesn't affect background */
   top: 50%;
   left: 50%;
@@ -49,6 +56,36 @@
   height: 570px;
   background-color: var(--White);
   border-radius: 10px;
+  padding: 47px;
  }
+
+ .header_part{
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+ }
+
+ .title{
+  margin-left: 30px;
+  font-weight: var(--weights_700);
+  font-size: 40;
+  
+ }
+
+ .accordion-header{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: var(--Dark_purple);
+ }
+
+ .accordion-content{
+  color: var(--Grayish_purple);
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+ }
+
+ 
 
 
